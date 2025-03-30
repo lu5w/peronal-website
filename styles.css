@@ -80,39 +80,56 @@ p {
 }
 
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none;
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
 }
 
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 80%;
   border-radius: 3%;
 }
 
-.close {
+.closeModal1,
+.closeModal2,
+.closeModal4,
+.closeModal5,
+.closeModalHobby1,
+.closeModalHobby2,
+.closeModalHobby3,
+.closeModalHobby4,
+.closeModalHobby5,
+.closeModalHobby6 {
   color: #fa0000;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  cursor: pointer;
 }
 
-.close:hover,
-.close:focus {
+.closeModal1:hover,
+.closeModal2:hover,
+.closeModal4:hover,
+.closeModal5:hover,
+.closeModalHobby1:hover,
+.closeModalHobby2:hover,
+.closeModalHobby3:hover,
+.closeModalHobby4:hover,
+.closeModalHobby5:hover,
+.closeModalHobby6:hover {
   color: rgb(58, 33, 33);
   text-decoration: none;
-  cursor: pointer;
 }
 
 ul {
@@ -159,7 +176,6 @@ ul {
 }
 
 /* Contact me section */
-
 .fa {
   padding: 20px;
   font-size: 20px;
@@ -173,7 +189,7 @@ ul {
   opacity: 0.7;
 }
 
-.fa-paper-plane {
+.fa-envelope {
   background: #3D348B;
   color: white;
 }
@@ -183,13 +199,12 @@ ul {
   color: white;
 }
 
-.fa-Linkedin {
+.fa-linkedin {
   background: #006eff;
   color: white;
 }
 
 /* Styling for the progress bars */
-
 .progressbar {
   height: 30px;
   width: 20%;
@@ -222,9 +237,7 @@ ul {
   width: 40%;
 }
 
-
-
-@media only screen and (max-width: 550px) and (min-width: 200px){
+@media only screen and (max-width: 550px) and (min-width: 200px) {
   .container-fluid {
     align-content: center;
   }
